@@ -5,7 +5,7 @@
     var meter = kilometer * 1000;
        return meter;
    }
-   var totalMeter = kilometerToMeter(5)
+   var totalMeter = kilometerToMeter(7)
    console.log(totalMeter);
 
 // hotelCost Starting ....
@@ -26,24 +26,24 @@ function hotelCost(days){
         rent = first10days + second10days + lastpart;
     }return rent;
    } 
-   console.log(hotelCost(21));
+   console.log(hotelCost(19));
    
-// function megaFriend(){
-    
-    // var name = 0;
+// megaFriend Starting....
 
-//     var friendList = ["Abdul", "Aminul Islam", "Abdullah", "oli","ovi", "Panu Mollah"];
-//     var largestName = friendList[0];
-//     for(var i = 0; i < friendList.length; i++){
-//         var element = friendList [i];
-//         if (element > largestName){
-//             largestName = element;
-//         }
-//     }
-
-//     console.log(largestName);
-     // return friendList;
-    // var result = megaFriend(1)
+var friendList = ["Abdul Aziz","panu mollah", "Aminul Islam", "Mushfiqur Rahman"];
+var megaFriend = function(friendList){
+    var longest = friendList.reduce(function(a,b){
+    return (a.length > b.length) ? a : b;
+  });
+    return longest;
+}
+console.log(megaFriend(friendList));
   
 
-   
+//budgetCalcualtor Starting....
+function budgetCalculator (gori, phone, laptop){
+    var budget = gori + phone + laptop;
+    return budget;
+}
+var result = budgetCalculator(50, 100, 500);
+console.log(result);
