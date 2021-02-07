@@ -1,0 +1,35 @@
+// function megaFriend(){
+    
+// }
+
+    
+    // var friendList = ['Abdul', "AminulIslam", "Abdullah", "oli","ovi", "PanuMollah"];
+    // var largestName = friendList[5];
+    // for(var i = 0; i <= friendList.length; i++){
+    //     var element = friendList [i];
+    //     if (element > largestName){
+    //         largestName = element;
+    //     }
+    // }
+
+    // console.log(largestName);
+
+// Third Time
+
+// function megaFriend(){
+//     var fNames = ["panu mollah", "Aminul Islam", "Mushfiqur Rahman"]
+//     var bigNames = fNames[0]
+
+// }return bigNames;
+// console.log(megaFriend(0))
+
+var array = [3, 6, 2, 56, 32, 5, 89, 32];
+var largest = 0;
+
+for (var i = 0; i<array.length; i++){
+    var element = array[i]
+    if(element > largest){
+        largest = element;
+    }
+}
+console.log(largest);
